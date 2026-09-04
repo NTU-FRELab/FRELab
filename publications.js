@@ -22,8 +22,8 @@ function readWork(group) {
 }
 
 function render(works) {
-  const groups = works.reduce((all, work) => { (all[work.year] ||= []).push(work); return all; }, {});
-  return Object.entries(groups).map(([year, items]) => `<div class="year-group"><h2>${esc(year)}</h2><div>${items.map((work, i) => `<article><span>${String(i + 1).padStart(2,'0')}</span><div><h3>${work.href ? `<a href="${esc(work.href)}" target="_blank" rel="noreferrer">${esc(work.title)} ↗</a>` : esc(work.title)}</h3><p>${esc([work.journal, work.doi].filter(Boolean).join(' · '))}</p></div></article>`).join('')}</div></div>`).join('');
+  const groups = works.reduce((all, work) => { if (!all.has(work.year)) all.set(work.year, []); all.get(work.year).push(work); return all; }, new Map());
+  return [...groups.entries()].map(([year, items]) => `<div class="year-group"><h2>${esc(year)}</h2><div>${items.map((work, i) => `<article><span>${String(i + 1).padStart(2,'0')}</span><div><h3>${work.href ? `<a href="${esc(work.href)}" target="_blank" rel="noreferrer">${esc(work.title)} ↗</a>` : esc(work.title)}</h3><p>${esc([work.journal, work.doi].filter(Boolean).join(' · '))}</p></div></article>`).join('')}</div></div>`).join('');
 }
 
 async function loadPublications() {
