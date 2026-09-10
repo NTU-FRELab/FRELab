@@ -7,12 +7,11 @@
 @media(max-width:760px){.site-header{height:76px}.site-header nav{gap:1rem}.site-header nav a:nth-child(1),.site-header nav a:nth-child(2){display:none}.hero{min-height:680px}.hero-copy{top:48%;right:6vw}.hero-copy h1{font-size:clamp(3.5rem,16vw,5rem)}.hero-note{display:none}.intro-grid,.section-top,.people,.publications-callout,.pub-summary,.footer-heading{grid-template-columns:1fr}.intro-grid,.section-top{gap:2rem}.research-list article{grid-template-columns:35px 1fr;gap:1rem}.research-list article p{grid-column:2}.scale-flow{display:grid;grid-template-columns:1fr 28px}.scale-flow i:last-of-type{display:none}.people-title{position:static}.pi-card{grid-template-columns:70px 1fr}.initials{width:64px;height:84px;font-size:1.5rem}.team-note{grid-template-columns:70px 1fr}.contact-grid{grid-template-columns:1fr;gap:2rem}.footer-base{flex-direction:column;gap:.5rem}.year-group{grid-template-columns:1fr}.year-group>h2{margin-bottom:2rem}.pub-summary a{justify-self:start}}@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.pub-loading span{animation:none}}
 .people-title{position:static}.people-summary{max-width:430px;margin:2rem 0 0;color:var(--soft)}.profile-links{display:flex;flex-wrap:wrap;gap:1rem 1.5rem}
 
-.brand-logo {
+.site-header .brand .brand-logo {
   width: clamp(36px, 4vw, 52px);
   height: clamp(36px, 4vw, 52px);
   object-fit: contain;
   display: block;
-  flex-shrink: 0;
 }
 
 /* GitHub Pages robustness: use a real full-size image instead of a CSS background. */
