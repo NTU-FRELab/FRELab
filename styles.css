@@ -16,3 +16,12 @@
 
 /* GitHub Pages robustness: use a real full-size image instead of a CSS background. */
 .people-list{min-width:0}.people-list .pi-card{padding:3.5rem 0}.people-list .pi-card:first-child{padding-top:0}
+
+.site-header .brand img.brand-logo {
+  width: 40px !important;
+  height: 40px !important;
+  max-width: 40px !important;
+  max-height: 40px !important;
+  object-fit: contain;
+  display: block;
+}
