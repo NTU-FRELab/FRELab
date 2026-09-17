@@ -75,8 +75,8 @@
 
 .pi-name .name-link {
   font-family: Arial, Helvetica, sans-serif;
-  font-size: 0.75rem;
-  font-weight: 600;
+  font-size: 0.55rem;
+  font-weight: 500;
   line-height: 1;
   color: var(--aqua);
   text-decoration: none;
