@@ -21,32 +21,84 @@
     href="https://ntu-frelab.github.io/FRELab/"
   >
 
-  <link rel="icon" href="favicon.png" type="image/png">
+  <!-- Site name used by Google and social platforms -->
+  <meta
+    property="og:site_name"
+    content="Functional Reef Ecology Lab"
+  >
+
+  <meta
+    property="og:title"
+    content="Coral Reefs in Taiwan | Functional Reef Ecology Lab"
+  >
+
+  <meta
+    property="og:description"
+    content="The Functional Reef Ecology Lab at National Taiwan University studies coral reefs across Taiwan, from organismal traits and demography to ecosystem functioning, resilience and conservation."
+  >
+
+  <meta
+    property="og:url"
+    content="https://ntu-frelab.github.io/FRELab/"
+  >
+
+  <meta
+    property="og:type"
+    content="website"
+  >
+
+  <!-- Lab logo shown in browser tabs and potentially Google results -->
+  <link
+    rel="icon"
+    type="image/png"
+    href="https://ntu-frelab.github.io/FRELab/favicon.png"
+  >
+
   <link rel="stylesheet" href="styles.css">
 
+  <!-- Structured information for search engines -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
-    "@type": "ResearchOrganization",
-    "name": "Functional Reef Ecology Lab",
-    "alternateName": "FRELab",
-    "url": "https://ntu-frelab.github.io/FRELab/",
-    "logo": "https://ntu-frelab.github.io/FRELab/favicon.png",
-    "description": "The Functional Reef Ecology Lab at National Taiwan University investigates coral reefs across Taiwan, from organismal traits and demography to ecosystem functioning, resilience and conservation.",
-    "parentOrganization": {
-      "@type": "CollegeOrUniversity",
-      "name": "National Taiwan University",
-      "url": "https://www.ntu.edu.tw/english/"
-    },
-    "founder": {
-      "@type": "Person",
-      "name": "Vianney Denis",
-      "sameAs": [
-        "https://orcid.org/0000-0002-0914-5586",
-        "https://scholar.google.com/citations?user=nASn9RYAAAAJ&hl=en",
-        "https://www.researchgate.net/profile/Vianney-Denis"
-      ]
-    }
+    "@graph": [
+      {
+        "@type": "WebSite",
+        "@id": "https://ntu-frelab.github.io/FRELab/#website",
+        "url": "https://ntu-frelab.github.io/FRELab/",
+        "name": "Functional Reef Ecology Lab",
+        "alternateName": "FRELab",
+        "description": "The Functional Reef Ecology Lab at National Taiwan University studies coral reefs across Taiwan.",
+        "publisher": {
+          "@id": "https://ntu-frelab.github.io/FRELab/#organization"
+        }
+      },
+      {
+        "@type": "ResearchOrganization",
+        "@id": "https://ntu-frelab.github.io/FRELab/#organization",
+        "name": "Functional Reef Ecology Lab",
+        "alternateName": "FRELab",
+        "url": "https://ntu-frelab.github.io/FRELab/",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://ntu-frelab.github.io/FRELab/favicon.png"
+        },
+        "description": "The Functional Reef Ecology Lab at National Taiwan University investigates coral reefs across Taiwan, from organismal traits and demography to ecosystem functioning, resilience and conservation.",
+        "parentOrganization": {
+          "@type": "CollegeOrUniversity",
+          "name": "National Taiwan University",
+          "url": "https://www.ntu.edu.tw/english/"
+        },
+        "founder": {
+          "@type": "Person",
+          "name": "Vianney Denis",
+          "sameAs": [
+            "https://orcid.org/0000-0002-0914-5586",
+            "https://scholar.google.com/citations?user=nASn9RYAAAAJ&hl=en",
+            "https://www.researchgate.net/profile/Vianney-Denis"
+          ]
+        }
+      }
+    ]
   }
   </script>
 </head>
